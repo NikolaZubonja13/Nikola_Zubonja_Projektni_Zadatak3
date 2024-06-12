@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>vježbe</title>
+<style>
+/* Import Russo One font */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background image and general styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pozadine/pozadina1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.exercise-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.exercise-section h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.exercise-section h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.image-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    height: 350px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.video-container {
+    margin: 20px 0;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.exercise-section p {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .exercise-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .exercise-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .image-container img {
+        height: 200px;
+    }
+
+    .exercise-section p {
+        padding: 15px;
+    }
+}
+
+	</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="o_meni.html">O Meni</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="exercise-section">
+            <h1>Vježbe</h1>
+            <h2>1. vježba - font</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba1.jpg" alt="Vježba 1">
+            </div>
+            <h2>2. vježba - bezierova krivulja, precizno crtanje</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba2.jpg" alt="Vježba 2">
+            </div>
+            <h2>3. vježba - boja, transformacije</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba3.jpg" alt="Vježba 3">
+            </div>
+            <h2>4. vježba - gradijenti, transparencija</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba4.jpg" alt="Vježba 4">
+                <img src="vjezbe/vjezba4a.jpg" alt="Vježba 4a">
+            </div>
+            <h2>Projektni zadatak - vektorska grafika</h2>
+            <div class="image-container">
+                <img src="vjezbe/projekt1.jpg" alt="Projekt 1">
+            </div>
+            <h2>5. vježba - retuširanje</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba5.jpg" alt="Vježba 5">
+                <img src="vjezbe/vjezba5a.jpg" alt="Vježba 5a">
+            </div>
+            <h2>6. vježba - koloriranje</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba6.jpg" alt="Vježba 6">
+                <img src="vjezbe/vjezba6a.jpg" alt="Vježba 6a">
+            </div>
+            <h2>7. vježba - fotomontaža</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba7.jpg" alt="Vježba 7">
+            </div>
+            <h2>Projektni zadatak - piksel grafika</h2>
+            <div class="image-container">
+                <img src="vjezbe/projekt2.jpg" alt="Projekt 2">
+            </div>
+            <h2>8. vježba - cinemagraf</h2>
+            <div class="image-container">
+                <img src="vjezbe/vjezba8.gif" alt="Vježba 8">
+                <img src="vjezbe/vjezba8a.gif" alt="Vježba 8a">
+            </div>
+            <h2>9. vježba - video</h2>
+            <div class="video-container">
+                <video controls autoplay>
+                    <source src="vjezbe/vjezba9.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
