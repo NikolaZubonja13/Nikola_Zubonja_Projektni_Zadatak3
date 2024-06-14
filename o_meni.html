@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>o_meni</title>
+<style>
+	
+/* Import Russo One font */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background image and general styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pozadine/pozadina1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-section h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.image-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    height: 350px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.video-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.video-section h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.video-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.video-section ul li {
+    background-color: #333;
+    padding: 15px 25px;
+    border-radius: 20px;
+    margin: 15px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.video-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.video-section ul li a:hover {
+    color: #f39c12;
+}
+
+.video-section ul li:active {
+    background-color: #1a1a1a;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section h1,
+    .video-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-section p {
+        padding: 15px;
+    }
+
+    .image-container img {
+        height: 200px;
+    }
+}
+	</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vjezbe.html">Vježbe</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h1>O Meni</h1>
+            <p>Ja sam Nikola Zubonja Imam 20 godina te dolazim iz Pule, studiram na grafičkom fakultetu smjer tehničko-tehnološki, uz studiranje također radim i kao Barmen u klubu Roko. Ljubitelj sam auto moto sportova i borilačkih sportova od malih nogu. Svoju karijeru vidim u stalnom učenju i nadopunjavanju svojih vještina koje sam stekao. Od malih nogu volim automobile i mehaniku koja je u njima sadržana.</p>
+            <div class="image-container">
+                <img src="slike/slika1.jpeg" alt="Slika 1">
+                <img src="slike/slika2.jpeg" alt="Slika 2">
+                <img src="slike/slika3.jpeg" alt="Slika 3">
+            </div>
+        </section>
+        <section class="video-section">
+            <h2>Video</h2>
+            <ul>
+                <li><a href="https://youtu.be/PrqYohBV58o?si=nKqQfWX1moHOuAac">Pogledaj video</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
